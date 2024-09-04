@@ -1,0 +1,15 @@
+int c = 0;
+for(int i = 0; i < n; i++) {
+    for(int j = 1; j < n; j *= 2) {
+        c++;
+    }
+}
+
+Ans: For the above code,
+
+    the no of ith operations run for n steps,
+    the no of jth operations run till doubling its value doesn't reach n.
+    so if n = 8;
+    the total operations are 24.
+
+    so the time complexity is O(n * log n).

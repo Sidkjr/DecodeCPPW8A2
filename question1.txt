@@ -1,0 +1,12 @@
+for(int i = 0; i < n; i++) {
+    for(int j = 0; j * j < n; j++) {
+        cout << “PhysicsWallah”;
+    }
+}
+
+Ans: For the above code,
+
+    the no of ith operations run for n steps,
+    no of jth operations run for n*n steps till n.
+
+    so the time complexity is O(n * square_root_of(n)).

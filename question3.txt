@@ -1,0 +1,15 @@
+int c = 0;
+for(int i = 0; i < n; i++) {
+    for(int j = 1; j * j < n; j *= 2) {
+        c++;
+    }
+}
+
+Ans: For the above code,
+
+    the no of ith operations run for n steps,
+    The no of j operations run while j * j < n, 
+    so j runs approximately from 1 to sqrt(n) and since j is multiplied by 2 in each iteration, 
+    the j operations run O(log(sqrt(n))) = O(log n) times.
+
+    so the time complexity is O(n * log n).

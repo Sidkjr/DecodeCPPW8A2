@@ -1,0 +1,16 @@
+int c = 0;
+for(int i = 1; i < n; i *= 2) {
+    for(int j = n; j > i; j--) {
+        c++;
+    }
+}
+
+
+Ans: For the above code,
+
+    The i operations starts at 1 and multiplies i by 2 in each iteration, running O(log n) times.
+    The j operations run from n down to i, so it runs approximately n - i times. 
+    the value of i is small compared to n, i runs approximately n times. 
+    As i increases, the number of iterations decreases.
+    So total number of operations is approximately n for each iteration of the jth loop, 
+    i.e O(n * log n).
